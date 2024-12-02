@@ -1,0 +1,21 @@
+{
+    "version": 3,
+    "configurePresets": [
+        {
+            "name": "vcpkg",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build",
+            "toolchainFile": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+            "cacheVariables": {
+                "SKBUILD_PROJECT_NAME": {
+                    "value": "scikit_build_example",
+                    "type": "string"
+                },
+                "SKBUILD_PROJECT_VERSION": {
+                    "value": "0.0.1",
+                    "type": "string"
+                }
+            }
+        }
+    ]
+}
